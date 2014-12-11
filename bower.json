@@ -1,36 +1,24 @@
 {
-  "name": "cysvg",
-  "version": "1.0.1",
+  "name": "Animate.js",
+  "version": "0.0.1",
   "authors": [
-    "david samson <david.samson@cyaninc.com>"
+    "David Samson <samsoncodeslayer@gmail.com>"
   ],
-  "description": "The cyan SVG library.",
-  "main": "./dist/js/cysvg.js",
+  "description": "A JavaScript animation library.",
+  "main": "",
   "moduleType": [
     "amd"
   ],
   "keywords": [
-    "svg",
-    "typescript"
+    "javascript",
+    "animation"
   ],
-  "license": "MIT",
-  "homepage": "http://github.cyanoptics.com/dsamson/cysvg",
+  "homepage": "https://github.com/davidsamson/Animate.js",
   "dependencies" : {
-    "d3" : "3.3.9"
   },
   "ignore": [
-    "**/.*",
-    "docs",
-    "examples",
-    "source",
     "node_modules",
     "bower_components",
-    "build",
-    "typescript",
-    "package.json",
-    "build.sh",
-    "buildExamples.sh",
-    "buildDocs.sh",
-    "tsdoc.json"
+    "package.json"
   ]
 }
