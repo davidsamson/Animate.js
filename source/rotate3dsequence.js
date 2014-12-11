@@ -25,13 +25,13 @@ Animate.Rotate3DSequence.prototype.reset = function(element) {
             this.rz1 = this.options.from.z;
         }
         if ( this.options.to && this.options.to.x !== undefined ) {
-            this.rx1 = this.options.to.x;
+            this.rx2 = this.options.to.x;
         }
         if ( this.options.to && this.options.to.y !== undefined ) {
-            this.ry1 = this.options.to.y;
+            this.ry2 = this.options.to.y;
         }
         if ( this.options.to && this.options.to.z !== undefined ) {
-            this.rz1 = this.options.to.z;
+            this.rz2 = this.options.to.z;
         }
     }
     this.drx = this.rx2 - this.rx1;

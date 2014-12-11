@@ -53,6 +53,7 @@ Animate.Animation.prototype.load = function(data) {
             }
         }
     }
+    return this;
 }
 
 Animate.Animation.prototype.update = function(time) {
