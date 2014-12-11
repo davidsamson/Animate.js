@@ -1,0 +1,36 @@
+{
+  "name": "cysvg",
+  "version": "1.0.1",
+  "authors": [
+    "david samson <david.samson@cyaninc.com>"
+  ],
+  "description": "The cyan SVG library.",
+  "main": "./dist/js/cysvg.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "svg",
+    "typescript"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.cyanoptics.com/dsamson/cysvg",
+  "dependencies" : {
+    "d3" : "3.3.9"
+  },
+  "ignore": [
+    "**/.*",
+    "docs",
+    "examples",
+    "source",
+    "node_modules",
+    "bower_components",
+    "build",
+    "typescript",
+    "package.json",
+    "build.sh",
+    "buildExamples.sh",
+    "buildDocs.sh",
+    "tsdoc.json"
+  ]
+}
