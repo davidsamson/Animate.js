@@ -1,6 +1,6 @@
 {
     "name":"Animate",
-    "repository":"http://github.cyanoptics.com/dsamson/cysvg.git",
+    "repository":"https://github.com/davidsamson/Animate.js",
     "description":"An JavaScript library for animating elements.",
     "version": "0.0.1",
     "devDependencies" : {
