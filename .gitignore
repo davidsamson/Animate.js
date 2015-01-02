@@ -1,5 +1,4 @@
 syntax:glob
 .idea
-build
 node_modules
-bower_components
+

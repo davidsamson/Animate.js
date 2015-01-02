@@ -11,30 +11,30 @@ Animate.Animation.prototype.addSequence = function(sequence) {
     sequence.reset();
     this.sequences.push(sequence);
     return this;
-}
+};
 
 Animate.Animation.prototype.removeSequence = function(sequenceId) {
 
-}
+};
 
 Animate.Animation.prototype.reset = function() {
     for(var s=0; s<this.sequences.length; s++) {
         this.sequences[s].reset(this.el);
     }
-}
+};
 
 Animate.Animation.prototype.start = function() {
     this.state = 1;
     this.startTime = _Animate.addAnimation(this);
-}
+};
 
 Animate.Animation.prototype.pause = function() {
     this.state = 2;
-}
+};
 
 Animate.Animation.prototype.stop = function() {
     this.state = 0;
-}
+};
 
 Animate.Animation.prototype.load = function(data) {
     if ( data.sequences ) {
@@ -54,12 +54,11 @@ Animate.Animation.prototype.load = function(data) {
         }
     }
     return this;
-}
+};
 
 Animate.Animation.prototype.update = function(time) {
     var dt = time - this.startTime;
     for(var s=0; s<this.sequences.length; s++) {
-        var sequence = this.sequences[s];
-        sequence.update(this.el, dt);
+        this.sequences[s].update(this.el, dt);
     }
-}
+};

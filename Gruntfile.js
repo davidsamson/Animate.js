@@ -8,15 +8,24 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'src/<%= pkg.name %>.js',
-                dest: 'build/<%= pkg.name %>.min.js'
+                src: [  'source/animate.js',
+                        'source/vector2.js',
+                        'source/sequence.js',
+                        'source/transformsequence.js',
+                        'source/scalesequence.js',
+                        'source/projectilesequence.js',
+                        'source/rotate3dsequence.js',
+                        'source/animation.js'
+                     ],
+                dest: 'build/animate.min.js',
+                mangle: true,
+                compress: true
             }
         },
         exec: {
             build: {
-                cmd: function (filename) {
-                    var command = "";
-                    return command;
+                cmd: function () {
+                    return "";
                 },
                 stdout: false,
                 stderr: true

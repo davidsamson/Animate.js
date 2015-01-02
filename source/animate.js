@@ -1,6 +1,6 @@
 var Animate = function() {
     this.animations = [];
-}
+};
 
 Animate.clone = function(obj) {
     var copy;
@@ -30,28 +30,27 @@ Animate.clone = function(obj) {
     }
 
     throw new Error("Unable to copy obj! Its type isn't supported.");
-}
+};
 
 
 Animate.prototype.update = function () {
     var now = window.performance.now();
     requestAnimationFrame(_AnimateUpdate);
     for(var a=0; a<this.animations.length; a++) {
-        var animation = this.animations[a];
-        animation.update(now);
+        this.animations[a].update(now);
     }
-}
+};
 
 Animate.prototype.addAnimation = function(animation) {
     this.animations.push(animation);
     this.update();
     return window.performance.now();
-}
+};
 
 var _Animate = new Animate();
 var _AnimateUpdate = function() {
     _Animate.update();
-}
+};
 
 
 

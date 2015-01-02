@@ -5,7 +5,7 @@ Animate.ProjectileSequence = function (options) {
     this.velocity = new Animate.Vector2();
     this.acceleration = new Animate.Vector2();
     this.lastTime = 0;
-}
+};
 
 Animate.ProjectileSequence.prototype = new Animate.Sequence();
 Animate.ProjectileSequence.base = Animate.Sequence.prototype;
@@ -39,7 +39,7 @@ Animate.ProjectileSequence.prototype.reset = function(element) {
             this.position2.y = this.options.to.y;
         }
     }
-}
+};
 
 Animate.ProjectileSequence.prototype.update = function(element, time) {
     Animate.ProjectileSequence.base.update.call(this, element, time);
@@ -64,4 +64,4 @@ Animate.ProjectileSequence.prototype.update = function(element, time) {
     }
 
     this.lastTime = time;
-}
+};
