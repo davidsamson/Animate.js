@@ -9,6 +9,7 @@
         "grunt-contrib-jshint": "~0.10.0",
         "grunt-contrib-nodeunit": "~0.4.1",
         "grunt-contrib-uglify": "~0.5.0",
-        "requirejs" : "2.1.14"
+        "requirejs" : "2.1.14",
+        "uglify-js": "~2.4.0"
     }
 }

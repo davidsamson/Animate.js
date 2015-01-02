@@ -13,15 +13,3 @@ var hwAnimate = new Animate.Animation(document.getElementById('hello_world'));
 
 hwAnimate.load(testSequence).start();
 
-for(var i=0;i<50;i++) {
-    var el = document.createElement("div");
-    el.innerHTML = '*';
-    el.style.position = "absolute";
-    document.body.appendChild(el);
-
-    var seq = {sequences: [{type: 'projectile', from: {x: Math.random()*1000, y:0}, start: 0, end: 15000, velocity: {y: Math.random()*0.05}, acceleration: {y:1 /*Math.random()*2*/}}]};
-    var animate = new Animate.Animation(el);
-
-    animate.load(seq).start();
-
-}
